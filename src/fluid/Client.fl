@@ -1,0 +1,81 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+Function {make_window()} {open
+} {
+  Fl_Window {} {
+    label {Outernet Audio Stream Decoder} open selected
+    xywh {348 169 632 408} type Double labelcolor 23 size_range {632 408 632 408} visible
+  } {
+    Fl_Group {} {
+      label {Currently Receiving} open
+      xywh {20 25 315 325} box BORDER_BOX
+    } {
+      Fl_Output {} {
+        label {Date / Time:}
+        xywh {110 76 205 24}
+      }
+      Fl_Output {} {
+        label {Description:}
+        xywh {110 105 205 70}
+      }
+      Fl_Output {} {
+        label {Source:}
+        xywh {110 46 205 24}
+      }
+      Fl_Progress {} {
+        label {Receive Progress}
+        xywh {35 190 280 35} selection_color 2
+      }
+      Fl_Output {} {
+        label {Successful KB:}
+        xywh {235 291 80 24}
+      }
+      Fl_Output {} {
+        label {Total KB:}
+        xywh {235 316 80 24}
+      }
+      Fl_Output {} {
+        label {Successful Blocks:}
+        xywh {235 241 80 24}
+      }
+      Fl_Output {} {
+        label {Total Number of Blocks:}
+        xywh {235 266 80 24}
+      }
+    }
+    Fl_Button {} {
+      label EXIT
+      xywh {525 355 100 40}
+    }
+    Fl_Button {} {
+      label Settings
+      xywh {435 355 80 30}
+    }
+    Fl_Group {} {
+      label {Available Data} open
+      xywh {350 25 200 315} box BORDER_BOX
+    } {
+      Fl_Browser {} {
+        xywh {365 38 172 289}
+      }
+    }
+    Fl_Progress {} {
+      label {Input Volume}
+      xywh {565 25 45 315} selection_color 63 labeltype NO_LABEL
+    }
+    Fl_Button {} {
+      label IMPORT
+      xywh {40 360 100 40}
+    }
+    Fl_Button {} {
+      label EXPORT
+      xywh {215 360 100 40}
+    }
+    Fl_Button {} {
+      label Modem
+      xywh {350 355 80 30}
+    }
+  }
+} 
