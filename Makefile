@@ -15,4 +15,4 @@ cmdline:
 
 
 fluid:
-	cd $(FLUIDDIR) && fluid -c *.fl	
+	cd $(FLUIDDIR) && fluid -c *.fl	&& $(CC) -c *.cxx
