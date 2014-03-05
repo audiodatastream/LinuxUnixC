@@ -38,3 +38,9 @@
 	// Reads sound samples from an audio file, no soundcard connection.
 	// Decodes file at the fastest speed possible, instead of realtime.
 	// Features otherwise identical to mode 1
+
+int main(void)
+{
+
+	return 0;
+}

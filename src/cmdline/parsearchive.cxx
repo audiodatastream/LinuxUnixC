@@ -37,3 +37,9 @@
 	// 2 : Encode
 	// Can read files and/or directories
 	// Can output to stdout and/or to a file 
+
+int main(void)
+{
+
+	return 0;
+}

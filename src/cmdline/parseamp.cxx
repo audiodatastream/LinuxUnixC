@@ -36,3 +36,10 @@
 	// 2 : Encode
 	// Can read files(s)
 	// Can output to stdout or to a text-file 
+
+
+int main(void)
+{
+
+	return 0;
+}
