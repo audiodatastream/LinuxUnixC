@@ -1,3 +1,4 @@
 bin
 src/fluid/*.cxx
 src/fluid/*.h
+*.o
