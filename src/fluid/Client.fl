@@ -5,7 +5,7 @@ code_name {.cxx}
 Function {make_window()} {open
 } {
   Fl_Window {} {
-    label {Outernet Audio Stream Decoder} open selected
+    label {ShortwaveSkyNet Audio Data Stream Decoder} open
     xywh {348 169 632 408} type Double labelcolor 23 size_range {632 408 632 408} visible
   } {
     Fl_Group {} {
@@ -46,7 +46,7 @@ Function {make_window()} {open
       }
     }
     Fl_Button {} {
-      label EXIT
+      label EXIT selected
       xywh {525 355 100 40}
     }
     Fl_Button {} {
@@ -54,7 +54,7 @@ Function {make_window()} {open
       xywh {435 355 80 30}
     }
     Fl_Group {} {
-      label {Available Data} open
+      label {Received Data} open
       xywh {350 25 200 315} box BORDER_BOX
     } {
       Fl_Browser {} {
