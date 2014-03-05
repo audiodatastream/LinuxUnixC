@@ -17,7 +17,7 @@ LINKFLTK = $(shell fltk-config --ldstaticflags)
 LINKFLTK_GL = $(shell fltk-config --use-gl --ldstaticflags)
 LINKFLTK_IMG = $(shell fltk-config --use-images --ldstaticflags)
 
-PROGRAMNAME=audiodatafile
+PROGRAMNAME=audiodatastream
 
 
 all: fluid cmdline main 
@@ -53,6 +53,5 @@ main: fluid cmdline
 	cd $(SRCDIR) && $(CXX) $(CXXFLAGS) -c main.cxx
 	$(CXX) $(CXXFLAGS) $(SRCDIR)/main.o $(FLUIDDIR)/*.o  -o $(SRCDIR)/$(PROGRAMNAME) -lfltk
 	chmod a+x $(SRCDIR)/$(PROGRAMNAME)
-	
 
-	
+
