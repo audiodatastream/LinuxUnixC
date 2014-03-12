@@ -61,11 +61,13 @@ int init()
 
 int run(string)
 {
-	/// 
-	/// if directorystructure check passes: copy to DATA directory
+	/// Decode the data-stream using the AMP protocol
 	
-	/// if all successful: pass filename to WRITEFIFO
-
+	/// if all data-blocks of a file are received: 
+			///write file ot hard drive
+			///pass filename to WRITEFIFO
+			///erase/clear received data-blocks for this file
+		
 }
 
 string check_forinput()
