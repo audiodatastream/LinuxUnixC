@@ -3,20 +3,19 @@ This directory contains commandline programs for
 decoding an AudioDataStream broadcast using
 Linux or Unix.
 
-Each utility implements one and only one OSI layer
-of the overall Outernet Broadcast-Audio protocol.
+Each program implements one and only one OSI layer
+of the overall protocol-stack.
 
 Without any commandline options the utilities operate
 so they can be chained together on the commandline.
 Example Usage:
 
-# parseaudio & parseamp & parsearchive &
+# parsearchive & parseamp & parseaudio &
 
 This will execute all three programs simultaneously and 
-connect the output of each into the next layer. 
+connect the output of each into the next layer using named pipes 
 Running these three programs as shown above fully implements
-a complete networking stack for a recieve-only data network.
-
+a complete networking stack for a receive-only data network.
 
 
 

@@ -38,6 +38,70 @@
 	// Can output to stdout or to a text-file 
 
 
+/* START PSEUDOCODE
+
+
+#define READFIFO "/tmp/parseamp.readfifo"
+#define WRITEFIFO "/tmp/parseamp.writefifo"
+
+#define SLEEPTIME 50 // time between checks in milliseconds
+#define CHUNKSIZE 400 // number of characters to read from the FIFO at one time
+	
+int init()
+{
+	/// Create FIFO READFIFO & set permissions
+	/// Open end of FIFO as ReadOnly	
+	
+	/// Create FIFO WRITEFIFO & set permissions
+	/// Open end of FIFO as WriteOnly
+	
+	/// Open TCP port for reading 
+	/// Open UDP port for reading
+}
+
+int run(string)
+{
+	/// 
+	/// if directorystructure check passes: copy to DATA directory
+	
+	/// if all successful: pass filename to WRITEFIFO
+
+}
+
+string check_forinput()
+{
+	/// Read READFIFO until empty or CHUNKSIZE reached
+	/// Read TCP port until empty or CHUNKSIZE reached
+	/// Read UDP port until empty or CHUNKSIZE reached
+
+	/// Copy this data to a string
+	/// 
+	/// return string
+}
+
+
+int main(void)
+{
+	bool BREAKCONDITION = false;
+
+	init();
+	
+	while (!BREAKCONDITION) {
+	
+		run( check_forinput() );
+			
+		BREAKCONDITION = check_break();
+		sleep(SLEEPTIME);
+	}
+
+
+	return 0;
+}
+
+END PSEUDOCODE
+*/ 
+
+
 int main(void)
 {
 

@@ -39,6 +39,51 @@
 	// Decodes file at the fastest speed possible, instead of realtime.
 	// Features otherwise identical to mode 1
 
+/* START PSEUDOCODE
+
+
+#define WRITEFIFO "/tmp/parseaudio.writefifo"
+	
+int init()
+{
+	/// Open Soundcard for reading
+
+	/// Create FIFO WRITEFIFO & set permissions
+	/// Open end of FIFO as WriteOnly
+	
+	/// Open TCP port in LISTEN mode
+	/// Open UDP port in LISTEN mode
+	
+}
+
+int run()
+{
+
+	while (!EXIT) {
+		/// Decode soundcard audio
+		/// Pass decoded data stream to WRITEFIFO
+		/// Pass decoded data stream to TCP port
+		/// Pass decoded data stream to UDP port
+		/// Check for exit condition
+	}
+	
+}
+
+
+int main(void)
+{
+	init();
+		
+	run();
+
+	return 0;
+}
+
+END PSEUDOCODE
+*/ 
+
+
+
 int main(void)
 {
 
